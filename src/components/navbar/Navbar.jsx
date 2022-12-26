@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import logo from '../../images/logo.png';
 import menu from '../../images/menu-burger.svg';
 import './navbar.css';
@@ -16,11 +16,11 @@ class Navbar extends Component {
             <a href='#' className="logo"><img src={logo} alt="pockemoney" /></a>
 
             <ul className={this.state.clicked ? "navbar" : "navbar open"}>
-                <li><Link to="/" href="#" className="active">Home</Link></li>
-                <li><Link to="/shop" href="#">Shop</Link></li>
-                <li><Link to="/donate" href="#">Donate</Link></li>
-                <li><Link to="/message" href="#">Messages</Link></li>
-                <li><Link to="/user" href="#">User</Link></li>
+                <li><a to="/" href="#" className="active">Home</a></li>
+                <li><a to="/shop" href="#">Shop</a></li>
+                <li><a to="/donate" href="#">Donate</a></li>
+                <li><a to="/message" href="#">Messages</a></li>
+                <li><a to="/user" href="#">User</a></li>
             </ul>
 
             <div className="user_balance">
