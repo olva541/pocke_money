@@ -1,4 +1,9 @@
 .home-page
 {
+    position: absolute;
     margin: 100px 30px 30px 30px;
+    color: aliceblue;
+    width: 1000px;
+    height: 1000px;
+    background-color: aliceblue;
 }
